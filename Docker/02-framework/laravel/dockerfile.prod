@@ -19,6 +19,6 @@ FROM php:7.4-fpm-alpine
 WORKDIR /var/www
 RUN rm -rf /var/www/html
 COPY --from=builder /var/www/laravel .
-RUN chown -R www-data:www-data /var/www
+#RUN chown -R www-data:www-data /var/www <- não ta funcionando :(
 EXPOSE 9000
 CMD ["php-fpm"]
