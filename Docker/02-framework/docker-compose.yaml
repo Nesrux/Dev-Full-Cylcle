@@ -1,0 +1,20 @@
+version: '3'
+
+networks:
+  laranet:
+    driver: bridge
+
+services:
+  laravel:
+    image: nesrux/laravel:prod
+    container_name: "laravel"
+    networks:
+      - laranet
+  
+  nginx:
+    image: nesrux/nginx:prod
+    container_name: nginx
+    networks:
+      - laranet
+    ports:
+      - 8080:80
