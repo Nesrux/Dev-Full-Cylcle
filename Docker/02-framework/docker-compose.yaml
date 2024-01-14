@@ -1,20 +1,28 @@
+#Versão do docker compose
 version: '3'
-
+#A network que os containers vão se conectar
 networks:
+  #nome da network
   laranet:
+    #Tipo da network
     driver: bridge
-
+#Containeres que serão utilizados
 services:
+
   laravel:
+    #Imagem do container
     image: nesrux/laravel:prod
+    #nome do container 
     container_name: "laravel"
+    #network que o container vai utilizar  
     networks:
       - laranet
-  
+
   nginx:
     image: nesrux/nginx:prod
     container_name: nginx
     networks:
       - laranet
+    #Portas onde o container vai se conectars
     ports:
       - 8080:80
