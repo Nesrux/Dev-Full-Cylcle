@@ -11,4 +11,4 @@ também da para fazer isso com pastas ou arquivos de configurações, da para de
 ```
 /src/* @josefinoexperança
 ```
-nesse outro exemplo, qualquer arquivo ou  pastas que estejam dentro da pasta src, fica de responsabilidade do josefino, clicando <a src ="https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners">aqui</a>, tem a DOC do próprio github explicando como funciona
+nesse outro exemplo, qualquer arquivo ou  pastas que estejam dentro da pasta src, fica de responsabilidade do josefino, clicando <a href ="https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners">aqui</a>, tem a DOC do próprio github explicando como funciona
