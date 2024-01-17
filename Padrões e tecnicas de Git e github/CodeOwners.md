@@ -1,4 +1,4 @@
-O arquivo de CODEOWNDERS também é um arquivo que fica dentro da pasta .github, ele serve para definir "quem é o dono do Código", ele é utilizado para facilitar o processo de code review, para definir automaticamente  quem fica responsável por o tipo de código ou por alguma pasta.
+O arquivo de CODEOWNDERS também é um arquivo que hica dentro da pasta .github, ele serve para definir "quem é o dono do Código", ele é utilizado para facilitar o processo de code review, para definir automaticamente  quem fica responsável por o tipo de código ou por alguma pasta.
 
 é bem simples utilizar ele, no exemplo a baixo, ele "fala", qualquer arquivo que termine com .js, o @joaomarcos é um dos responsáveis por fazer o code review
 
