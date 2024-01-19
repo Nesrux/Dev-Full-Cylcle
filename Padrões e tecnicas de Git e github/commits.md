@@ -15,20 +15,48 @@ Com toda a certeza, uma boa alternativa é o Commitzen, ele é roda diretamente 
 
 primeiro verificamos se o NPM ja esta instalado em seu computador digitando o comando no terminal 
 
-``npm -v``
+```
+npm -v
+```
+
 se não der nenhum erro e aparecer a versão em seu terminal, quer dizer que o npm ja esta instalado.
 Agora é só instalar co commitzen em seu computador utilizando o comando
-``npm install commitizen -g``
 
+```
+npm install commitizen -g
+```
 
-``
+Agora precisamos habilitar o commitzen em seu projeto, dentro da pasta raiz, digite o comando
+
+```
 npx commitizen init cz-conventional-changelog --save-dev --save-exact
-``
+```
 
-precisa de um arquivo de gitignore, para nao pushar o nodemodules
+que ele vai instalar o commitzen, após isso é só criar uma pasta .git com o comando
+
+```
+git init
+```
+
+e ao invés de fazer os commits com git commit -m "bla bla bla", você utiliza o comando 
+
+```
+git cz
+```
+
+que vai aparecer um menu de opções dentro do seu terminal para criar commits semanticos.
 
 
+### Commitzar
+O Commitzar é uma ferramenta que ajuda na parte de CI (Continus integration) de um projeto, ele é uma imagem Docker que verifica todos os commits do seu projeto, e cria um relatório.
 
-rodar o commitzar`
-serve para ser utilizado em CI (continus integrarion)
-  docker run --rm --name="commitsar" -w /src -v "$(pwd)":/src aevea/commitsar commitsar .
+para utilizar, primeiro precisamos do Docker intalado, para verificar se temos o docker digitamos no terminal o comando
+
+```
+docker -v
+```
+se não der nenhum erro, quer dizer que ja possí o docker instalado, Então, dentro da pasta raiz do seu projeto, do terminal digite o comando.
+```
+docker run --rm --name="commitsar" -w /src -v "$(pwd)":/src aevea/commitsar commitsar . 
+```
+Obs: para funcionar é necessario que dentro do projeto tenha uma pasta chamado .git
